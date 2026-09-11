@@ -674,24 +674,33 @@ button, input, select, textarea {
   padding: 3rem 2.5rem;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
   position: relative;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .tracker-form-row {
   display: flex;
   gap: 1rem;
   max-width: 680px;
+  width: 100%;
   margin: 2rem auto 1rem auto;
+  box-sizing: border-box;
 }
 .tracker-input {
-  flex: 1;
+  flex: 1 1 0%;
+  min-width: 0;
+  width: 100%;
   background: var(--bg-darker);
   border: 1.5px solid var(--border-glass);
   border-radius: var(--radius-md);
   padding: 1rem 1.25rem;
   color: var(--text-main);
   font-family: var(--font-mono);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   outline: none;
   transition: border-color var(--transition-fast);
+  box-sizing: border-box;
 }
 .tracker-input:focus {
   border-color: var(--amber-primary);
@@ -706,6 +715,8 @@ button, input, select, textarea {
   font-size: 0.875rem;
   color: var(--text-subtle);
   margin-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 .sample-btn {
   background: rgba(255, 255, 255, 0.05);
@@ -717,6 +728,8 @@ button, input, select, textarea {
   cursor: pointer;
   font-size: 0.8125rem;
   transition: all var(--transition-fast);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .sample-btn:hover {
   background: rgba(245, 158, 11, 0.2);
@@ -732,6 +745,10 @@ button, input, select, textarea {
   padding: 2rem;
   display: none;
   animation: fadeIn 0.4s ease;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .repair-result-card.active {
   display: block;
@@ -943,16 +960,24 @@ button, input, select, textarea {
   border-radius: var(--radius-lg);
   padding: 3.5rem 3rem;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.75rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 .form-group.full-width {
   grid-column: 1 / -1;
@@ -976,6 +1001,9 @@ button, input, select, textarea {
   font-size: 0.975rem;
   outline: none;
   transition: all var(--transition-fast);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .form-control:focus {
   border-color: var(--amber-primary);
@@ -995,6 +1023,8 @@ select.form-control option {
   background: rgba(7, 10, 17, 0.5);
   cursor: pointer;
   transition: all var(--transition-fast);
+  width: 100%;
+  box-sizing: border-box;
 }
 .file-upload-area:hover, .file-upload-area.dragover {
   border-color: var(--amber-primary);
@@ -1023,12 +1053,14 @@ select.form-control option {
 /* Radio Choice Chips */
 .choice-group {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
 }
 .choice-chip {
-  flex: 1;
-  min-width: 140px;
+  flex: 1 1 0%;
+  min-width: 0;
 }
 .choice-chip input {
   display: none;
@@ -1038,15 +1070,18 @@ select.form-control option {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.85rem 1rem;
+  padding: 0.85rem 0.75rem;
   background: var(--bg-darker);
   border: 1.5px solid var(--border-glass);
   border-radius: var(--radius-md);
   cursor: pointer;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   color: var(--text-muted);
   transition: all var(--transition-fast);
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
 .choice-chip input:checked + label {
   border-color: var(--amber-primary);
@@ -1439,7 +1474,7 @@ img, iframe, svg, video {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-  .booking-card, .status-search-card {
+  .form-container-card, .tracker-box, .booking-card, .status-search-card {
     padding: 1.75rem 1.25rem;
     border-radius: var(--radius-md);
   }
@@ -1549,8 +1584,48 @@ img, iframe, svg, video {
   .brand-card {
     padding: 1rem 0.5rem;
   }
-  .booking-card, .status-search-card {
+  .form-container-card, .tracker-box, .booking-card, .status-search-card {
     padding: 1.25rem 0.85rem;
+  }
+  .tracker-form-row {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    margin: 1.25rem 0 1rem 0;
+  }
+  .tracker-input {
+    width: 100%;
+    font-size: 16px !important;
+  }
+  .tracker-form-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .repair-result-card {
+    padding: 1.25rem 0.85rem;
+  }
+  .repair-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .repair-details-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .choice-group {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .choice-chip {
+    width: 100%;
+    flex: none;
+  }
+  .choice-chip label {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0.85rem 1rem;
   }
   .btn-lg {
     padding: 0.9rem 1.25rem;

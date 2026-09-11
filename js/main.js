@@ -229,7 +229,15 @@ function initRepairTracker() {
 
     const totalSteps = data.steps.length;
     const progressPercent = ((data.stepIndex - 1) / (totalSteps - 1)) * 100;
-    if (progressLine) progressLine.style.width = `${progressPercent}%`;
+    if (progressLine) {
+      if (window.innerWidth <= 768) {
+        progressLine.style.width = '3px';
+        progressLine.style.height = `${progressPercent}%`;
+      } else {
+        progressLine.style.height = '3px';
+        progressLine.style.width = `${progressPercent}%`;
+      }
+    }
 
     let html = '';
     data.steps.forEach((step, idx) => {
