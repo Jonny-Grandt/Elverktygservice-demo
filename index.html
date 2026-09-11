@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Local Search Optimization -->
+  <title>Auktoriserad Verktygsservice & Reparation i Jönköping | Elverktygsservice</title>
+  <meta name="description" content="Auktoriserad verktygsservice och garantireparationer i Jönköping. Vi servar Makita, Paslode, DeWalt, Milwaukee, Bosch m.fl. Snabb felsökning & originalreservdelar. Industrigatan 10, 553 02 Jönköping. Ring 036-18 70 80.">
+  <meta name="keywords" content="Auktoriserad verktygsservice Jönköping, Reparera elverktyg Jönköping, Maskinservice, Makita service Jönköping, Paslode garantireparation, DeWalt service, Milwaukee reparation, Bosch verkstad Jönköping, reservdelar elverktyg">
+  <meta name="author" content="Elverktygsservice i Jönköping AB">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Auktoriserad Verktygsservice & Reparation i Jönköping">
+  <meta property="og:description" content="Din lokala verkstads- och garantipartner för professionella elverktyg i Jönköping & Huskvarna. Ring 036-18 70 80.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://elverktygsservice.se/">
+  <meta property="og:locale" content="sv_SE">
+
+  <!-- LocalBusiness Schema Markup (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Elverktygsservice i Jönköping AB",
+    "image": "file:///C:/Users/Jonny/.gemini/antigravity-ide/brain/80a278f1-4bd0-43ee-8980-f17513faf304/storefront_workshop_1789136230853.png",
+    "@id": "https://elverktygsservice.se/#organization",
+    "url": "https://elverktygsservice.se/",
+    "telephone": "+4636187080",
+    "email": "info@elverktygsservice.se",
+    "sameAs": [
+      "https://www.facebook.com/Elverktygsservice",
+      "https://www.instagram.com/elverktygsserviceijonkopingab"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Industrigatan 10",
+      "addressLocality": "Jönköping",
+      "postalCode": "553 02",
+      "addressCountry": "SE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 57.7718,
+      "longitude": 14.1561
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:00",
+        "closes": "17:00"
+      }
+    ],
+    "priceRange": "$$",
+    "areaServed": ["Jönköping", "Huskvarna", "Nässjö", "Värnamo", "Habo", "Bankeryd", "Mullsjö", "Vaggeryd"],
+    "brand": [
+      {"@type": "Brand", "name": "Makita"},
+      {"@type": "Brand", "name": "Paslode"},
+      {"@type": "Brand", "name": "DeWalt"},
+      {"@type": "Brand", "name": "Milwaukee"},
+      {"@type": "Brand", "name": "Bosch Professional"},
+      {"@type": "Brand", "name": "Festool"},
+      {"@type": "Brand", "name": "HiKOKI"}
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts & Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Overlay for Mobile Drawer & Modals -->
+  <div class="overlay"></div>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <div class="top-bar-item">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Industrigatan 10, 553 02 Jönköping</span>
+        </div>
+        <div class="top-bar-item">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:036187080" style="font-weight: 700; color: var(--text-main);">036-18 70 80</a>
+        </div>
+        <div class="top-bar-item">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:info@elverktygsservice.se">info@elverktygsservice.se</a>
+        </div>
+      </div>
+      <div class="top-bar-status" id="store-status-pill">
+        <span class="pulse-dot"></span>
+        <span>Öppet nu! Stänger kl 17:00</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <div class="logo-text">
+          <div class="logo-title">ELVERKTYGS<span>SERVICE</span></div>
+          <div class="logo-subtitle">JÖNKÖPING • AUKTORISERAD VERKSTAD</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#tjanster" class="nav-link">Våra Tjänster</a></li>
+          <li><a href="#varumarken" class="nav-link">Varumärken</a></li>
+          <li><a href="#status" class="nav-link">Sök Orderstatus</a></li>
+          <li><a href="#inlamning" class="nav-link">Boka Service</a></li>
+          <li><a href="#kontakt" class="nav-link">Kontakt & Hitta Hit</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#status" class="btn btn-secondary btn-sm">Sök Status</a>
+        <a href="#inlamning" class="btn btn-primary btn-sm">Boka Reparation</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Meny">
+        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo-title" style="font-size: 1.1rem;">ELVERKTYGS<span>SERVICE</span></div>
+      <button class="mobile-menu-close" aria-label="Stäng">✕</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#tjanster" class="mobile-nav-link">Våra Tjänster</a></li>
+      <li><a href="#varumarken" class="mobile-nav-link">Varumärken</a></li>
+      <li><a href="#status" class="mobile-nav-link">Sök Orderstatus</a></li>
+      <li><a href="#inlamning" class="mobile-nav-link">Boka Service</a></li>
+      <li><a href="#kontakt" class="mobile-nav-link">Kontakt & Öppettider</a></li>
+    </ul>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 1rem;">
+      <a href="tel:036187080" class="btn btn-primary" style="width: 100%;">Ring 036-18 70 80</a>
+      <a href="#inlamning" class="btn btn-secondary" style="width: 100%;">Boka Service Online</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge badge-amber">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <span>Auktoriserad Verktygsservice i Jönköping</span>
+        </div>
+
+        <h1 class="hero-title">
+          Vi ger dina elverktyg och maskiner <span class="highlight">nytt liv.</span>
+        </h1>
+
+        <p class="hero-description">
+          Snabba garantireparationer, certifierad elsäkerhetstestning och originalreservdelar för hantverkare, byggföretag och privatpersoner på Industrigatan 10 i Jönköping.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#inlamning" class="btn btn-primary btn-lg">
+            <span>Boka Service / Reparation</span>
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#status" class="btn btn-secondary btn-lg">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <span>Sök Reparationsstatus</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">25+ <span>År</span></div>
+            <div class="stat-label">Erfarenhet i Jönköping</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10+ <span>Märken</span></div>
+            <div class="stat-label">Auktoriserade varumärken</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">48t <span>Snitt</span></div>
+            <div class="stat-label">Genomströmningstid</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="file:///C:/Users/Jonny/.gemini/antigravity-ide/brain/80a278f1-4bd0-43ee-8980-f17513faf304/hero_workshop_1789136195178.png" alt="Elverktygsservice Jönköping Verkstad">
+          <div class="floating-badge">
+            <div class="floating-badge-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="floating-badge-text">
+              <h4>Direct Garanti-Registrering</h4>
+              <p>Makita, Paslode, DeWalt, Milwaukee & Bosch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Authorization Showcase Section -->
+  <section id="varumarken" class="brands-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="subtitle">Auktorisationer & Märken</p>
+        <h2>Varumärken vi servar & repararer</h2>
+        <p class="description">Vi arbetar uteslutande med originalreservdelar direkt från tillverkarna för att garantera fullständig prestanda och bibehållen maskingaranti.</p>
+      </div>
+
+      <div class="brands-grid">
+        <div class="brand-card authorised" data-brand="Makita">
+          <div class="brand-name">MAKITA</div>
+          <div class="brand-badge">Auktoriserad Garanti</div>
+        </div>
+        <div class="brand-card authorised" data-brand="Paslode">
+          <div class="brand-name">PASLODE</div>
+          <div class="brand-badge">Gas & Bult Specialist</div>
+        </div>
+        <div class="brand-card authorised" data-brand="DeWalt">
+          <div class="brand-name">DEWALT</div>
+          <div class="brand-badge">Auktoriserad Verkstad</div>
+        </div>
+        <div class="brand-card authorised" data-brand="Milwaukee">
+          <div class="brand-name">MILWAUKEE</div>
+          <div class="brand-badge">Heavy Duty Service</div>
+        </div>
+        <div class="brand-card authorised" data-brand="Bosch">
+          <div class="brand-name">BOSCH</div>
+          <div class="brand-badge">Professional Service</div>
+        </div>
+        <div class="brand-card" data-brand="Festool">
+          <div class="brand-name">FESTOOL</div>
+          <div class="brand-badge">Snickeri Specialist</div>
+        </div>
+        <div class="brand-card" data-brand="HiKOKI">
+          <div class="brand-name">HiKOKI</div>
+          <div class="brand-badge">Maskinservice</div>
+        </div>
+        <div class="brand-card" data-brand="Spit">
+          <div class="brand-name">SPIT</div>
+          <div class="brand-badge">Bult & Förankring</div>
+        </div>
+        <div class="brand-card" data-brand="Fein">
+          <div class="brand-name">FEIN</div>
+          <div class="brand-badge">Multiverktyg Service</div>
+        </div>
+        <div class="brand-card" data-brand="Metabo">
+          <div class="brand-name">METABO</div>
+          <div class="brand-badge">Industriservice</div>
+        </div>
+        <div class="brand-card" data-brand="Husqvarna">
+          <div class="brand-name">HUSQVARNA</div>
+          <div class="brand-badge">Bygg- & Betongverktyg</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Repair Status Tracker Section -->
+  <section id="status" class="tracker-section">
+    <div class="container">
+      <div class="tracker-box">
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+          <p class="subtitle">Real-Time Spårning</p>
+          <h2>Sök Status på din Reparation</h2>
+          <p class="description">Mata in ditt ordernummer (t.ex. EV-94821) för att följa maskinens väg genom verkstaden i realtid.</p>
+        </div>
+
+        <form id="tracker-form" class="tracker-form-row">
+          <input type="text" id="tracker-input" class="tracker-input" placeholder="Mata in Ordernummer (t.ex. EV-94821)" required autocomplete="off">
+          <button type="submit" class="btn btn-primary btn-lg">Sök Order</button>
+        </form>
+
+        <div class="tracker-sample-tags">
+          <span>Testa exempelorder:</span>
+          <button type="button" class="sample-btn" data-code="EV-94821">EV-94821 (Makita)</button>
+          <button type="button" class="sample-btn" data-code="EV-94822">EV-94822 (Paslode)</button>
+          <button type="button" class="sample-btn" data-code="EV-94823">EV-94823 (DeWalt)</button>
+          <button type="button" class="sample-btn" data-code="EV-94824">EV-94824 (Milwaukee)</button>
+        </div>
+
+        <!-- Live Status Card Output -->
+        <div id="repair-result-card" class="repair-result-card">
+          <div class="repair-header">
+            <div>
+              <span class="badge badge-amber" style="margin-bottom: 0.5rem;">Orderhittad</span>
+              <h3 id="res-tool" style="font-size: 1.3rem;">Makita DHR242Z Kombihammare</h3>
+            </div>
+            <div class="repair-id-badge" id="res-id">EV-94821</div>
+          </div>
+
+          <div class="repair-details-grid">
+            <div class="detail-item">
+              <label>Kund</label>
+              <p id="res-customer">Smålands Bygg AB</p>
+            </div>
+            <div class="detail-item">
+              <label>Beskrivning av fel</label>
+              <p id="res-issue">Slirande växelhus</p>
+            </div>
+            <div class="detail-item">
+              <label>Tilldelad Tekniker</label>
+              <p id="res-tech">Lars-Göran N.</p>
+            </div>
+            <div class="detail-item">
+              <label>Beräknat klart</label>
+              <p id="res-est" style="color: var(--amber-primary);">2026-09-12 (Imorgon)</p>
+            </div>
+          </div>
+
+          <!-- Dynamic Stepper -->
+          <div style="position: relative; margin-top: 2rem;">
+            <div class="stepper-progress" id="res-progress-line"></div>
+            <div class="stepper" id="res-stepper">
+              <!-- Rendered dynamically by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Section -->
+  <section id="tjanster" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="subtitle">Kvalitet i Varje Moment</p>
+        <h2>Våra Tjänster & Verkstadsservice</h2>
+        <p class="description">Från akut felsökning till planerat underhåll och elsäkerhetsbesiktningar – vi håller ditt byggprojekt igång.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Auktoriserad Garantireparation</h3>
+          <p>Snabb handläggning av garantireparationer för våra avtalsmärken. Vi sköter all kontakt med tillverkaren så att du får din maskin lagad utan kostnad.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Direktregistrering mot fabriksgaranti</li>
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Endast tillverkarens originaldelar</li>
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Fri reservmaskin vid längre handläggning</li>
+          </ul>
+          <a href="#inlamning" class="btn btn-outline btn-sm" style="width: 100%;">Boka Garantiservice</a>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Gas- & Spikpistolsservice</h3>
+          <p>Paslode, Spit och Tjep spikpistoler kräver regelbunden service. Vår ultraljudstvätt rengör brännkammaren på djupet för maximal skjutkraft.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Ultraljudstvätt av förbränningskammare</li>
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Byte av drivblad, kolvringar & tändstift</li>
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Provskjutning & kalibrering</li>
+          </ul>
+          <a href="#inlamning" class="btn btn-outline btn-sm" style="width: 100%;">Lämna Spikpistol</a>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Elsäkerhetskontroll (EN 62841)</h3>
+          <p>Undvik olyckor och uppfyll Arbetsmiljöverkets krav. Vi provbelastar och isolationstestar 230V & 400V maskiner enligt gällande standard.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Isolationstest & skyddsledarmätning</li>
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Besiktningsprotokoll med godkänd märkning</li>
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Kabelbyten & kabelförskruvningar</li>
+          </ul>
+          <a href="#inlamning" class="btn btn-outline btn-sm" style="width: 100%;">Beställ Besiktning</a>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="10" x2="23" y2="14"/></svg>
+          </div>
+          <h3>Batteridiagnostik & Kapacitetstest</h3>
+          <p>Har ditt 18V eller 40V batteri tappat orken? Vi testar och konditionerar litiumjonbatterier för att säkerställa full drifttid på arbetsplatsen.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Mätning av intern cellbalans</li>
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Laddarprovning & mjukvaruuppdatering</li>
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Återvinning & utbytesbatterier</li>
+          </ul>
+          <a href="#inlamning" class="btn btn-outline btn-sm" style="width: 100%;">Testa Batteri</a>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h3>Originalreservdelar & Tillbehör</h3>
+          <p>Stort lager av kolborstar, växelhus, rotorer, strömbrytare och sågklingor i vår butik på Industrigatan 10 i Jönköping. Hämtning över disk eller snabb leverans.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Över 15 000 artiklar i databasen</li>
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Hjälp med sprängskisser & reservdelsnummer</li>
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Direktförsäljning till hantverkare</li>
+          </ul>
+          <a href="tel:036187080" class="btn btn-outline btn-sm" style="width: 100%;">Fråga om Reservdel (036-18 70 80)</a>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Hämtning & Utkörning för Företag</h3>
+          <p>Har byggföretaget ett flertal maskiner som behöver service? Vår turbil hämtar upp trasiga verktyg direkt ute på bygget i Jönköping/Huskvarna.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Fast turbilscschema för avtalskunder</li>
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Samlad fakturering & maskinhistorik</li>
+            <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Tidsbesparande för dina hantverkare</li>
+          </ul>
+          <a href="#inlamning" class="btn btn-outline btn-sm" style="width: 100%;">Boka Turbilshämtning</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Request & Repair Inquiry Form Section -->
+  <section id="inlamning" class="form-section">
+    <div class="container">
+      <div class="form-container-card">
+        <div class="section-header" style="text-align: left; max-width: 100%; margin-bottom: 2.5rem;">
+          <p class="subtitle">Föranmäl Din Reparation</p>
+          <h2>Boka Service / Begär Kostnadsförslag</h2>
+          <p class="description">Fyll i formuläret nedan för snabbare hantering vid inlämning eller för att få ett prisuppskattat kostnadsförslag innan inlämning.</p>
+        </div>
+
+        <form id="service-inquiry-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms Key Placeholder Ready -->
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="Ny Serviceförfrågan via Elverktygsservice.se">
+
+          <div class="form-grid">
+            <!-- Customer Type Choice -->
+            <div class="form-group full-width">
+              <label class="form-label">Kundtyp <span class="req">*</span></label>
+              <div class="choice-group">
+                <div class="choice-chip">
+                  <input type="radio" id="type-company" name="customer_type" value="Företag" checked>
+                  <label for="type-company">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Företag / Byggfirma
+                  </label>
+                </div>
+                <div class="choice-chip">
+                  <input type="radio" id="type-private" name="customer_type" value="Privatperson">
+                  <label for="type-private">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    Privatperson
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Name / Company -->
+            <div class="form-group">
+              <label class="form-label" for="form-name">Namn / Företagsnamn <span class="req">*</span></label>
+              <input type="text" id="form-name" name="name" class="form-control" placeholder="t.ex. Byggtjänst i Jönköping AB" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label class="form-label" for="form-email">E-postadress <span class="req">*</span></label>
+              <input type="email" id="form-email" name="email" class="form-control" placeholder="namn@foretag.se" required>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+              <label class="form-label" for="form-phone">Telefonnummer <span class="req">*</span></label>
+              <input type="tel" id="form-phone" name="phone" class="form-control" placeholder="036-18 70 80" required>
+            </div>
+
+            <!-- Brand Dropdown -->
+            <div class="form-group">
+              <label class="form-label" for="form-brand">Verktygsmärke <span class="req">*</span></label>
+              <select id="form-brand" name="brand" class="form-control" required>
+                <option value="" disabled selected>Välj fabrikat...</option>
+                <option value="Makita">Makita</option>
+                <option value="Paslode">Paslode / Spit</option>
+                <option value="DeWalt">DeWalt</option>
+                <option value="Milwaukee">Milwaukee</option>
+                <option value="Bosch">Bosch Professional</option>
+                <option value="Festool">Festool</option>
+                <option value="HiKOKI">HiKOKI / Hitachi</option>
+                <option value="Fein">Fein</option>
+                <option value="Metabo">Metabo</option>
+                <option value="Husqvarna">Husqvarna</option>
+                <option value="Annat märke">Annat märke</option>
+              </select>
+            </div>
+
+            <!-- Model -->
+            <div class="form-group">
+              <label class="form-label" for="form-model">Modell / Typbeteckning</label>
+              <input type="text" id="form-model" name="model" class="form-control" placeholder="t.ex. DHR242, IM350, DWE4206">
+            </div>
+
+            <!-- Issue Category -->
+            <div class="form-group">
+              <label class="form-label" for="form-issue">Typ av fel / Servicetyp <span class="req">*</span></label>
+              <select id="form-issue" name="issue_type" class="form-control" required>
+                <option value="" disabled selected>Välj servicetyp...</option>
+                <option value="Garantireparation">Garantireparation (med kvitto/garantibevis)</option>
+                <option value="Startar ej">Maskinen startar inte alls</option>
+                <option value="Dålig effekt / Slirar">Dålig slageffekt / Slirande växelhus</option>
+                <option value="Gnistor / Rök / Lukt">Gnistor från kolborstar / Röklukt</option>
+                <option value="Gas / Tändningsfel spikpistol">Gas- / tändningsfel på spikpistol</option>
+                <option value="Skadad sladd / kontakt">Skadad nätkabel / kontakt</option>
+                <option value="Periodisk elsäkerhetsservice">Förebyggande elsäkerhetsservice & besiktning</option>
+                <option value="Förfrågan reservdelar">Endast förfrågan om reservdelar</option>
+              </select>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="form-group full-width">
+              <label class="form-label" for="form-desc">Beskrivning av symptom eller önskemål</label>
+              <textarea id="form-desc" name="description" class="form-control" rows="4" placeholder="Beskriv vad som hände när felet uppstod, om du vill ha ett prisförslag innan reparering påbörjas, etc."></textarea>
+            </div>
+
+            <!-- Optional Image Upload Placeholder -->
+            <div class="form-group full-width">
+              <label class="form-label">Bifoga foto på typskylt eller skada (valfritt)</label>
+              <div class="file-upload-area" onclick="document.getElementById('file-upload').click()">
+                <div class="file-upload-icon">
+                  <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                </div>
+                <p style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;">Klicka här för att välja en bild eller drag-and-drop</p>
+                <span style="font-size: 0.775rem; color: var(--text-subtle);">Skärpa på märkskylt/serienummer underlättar felsökningen (JPG, PNG, max 10MB)</span>
+                <input type="file" id="file-upload" name="attachment" accept="image/*" style="display: none;">
+                <div id="file-preview-area"></div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div style="font-size: 0.825rem; color: var(--text-subtle);">
+              🔒 Dina uppgifter behandlas säkert enligt GDPR och lämnas aldrig ut till tredje part.
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">
+              <span>Skicka Föranmälan / Begär Pris</span>
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media & Live News Section -->
+  <section class="social-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="subtitle">Nyheter & Aktuellt</p>
+        <h2>Följ oss på Sociala Medier</h2>
+        <p class="description">Glimtar från verkstaden i Jönköping, serviceråd för dina maskiner och aktuella nyheter på Facebook och Instagram.</p>
+        <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+          <a href="https://www.facebook.com/Elverktygsservice" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10V9.5C10 7.01 11.49 5.65 13.75 5.65c1.08 0 2.25.19 2.25.19v2.47h-1.27c-1.23 0-1.62.77-1.62 1.56V12h2.78l-.44 3h-2.34v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+            Besök Facebook
+          </a>
+          <a href="https://www.instagram.com/elverktygsserviceijonkopingab?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Besök Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="social-tabs">
+        <button class="tab-btn active" data-tab="facebook">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10V9.5C10 7.01 11.49 5.65 13.75 5.65c1.08 0 2.25.19 2.25.19v2.47h-1.27c-1.23 0-1.62.77-1.62 1.56V12h2.78l-.44 3h-2.34v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+          Facebook Inlägg
+        </button>
+        <button class="tab-btn" data-tab="instagram">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Instagram Galleri
+        </button>
+      </div>
+
+      <!-- Facebook Grid -->
+      <div id="fb-feed" class="social-grid">
+        <div class="social-card">
+          <div class="social-card-header">
+            <div class="social-avatar">EV</div>
+            <div class="social-meta">
+              <h4>Elverktygsservice i Jönköping AB</h4>
+              <span>För 2 dagar sedan • Facebook</span>
+            </div>
+          </div>
+          <p class="social-text">
+            Måndagens tips från verkstadsgolvet på Industrigatan 10: Paslode spikpistoler mår bäst av en ordentlig ultraljudstvätt efter ca 50 000 skott. Här har vi precis gått igenom fem stycken IM350+ åt en lokalt byggfirma i Huskvarna. Alla rengjorda, provskjutna och redo för nya takjobb! 🛠️
+          </p>
+          <img src="file:///C:/Users/Jonny/.gemini/antigravity-ide/brain/80a278f1-4bd0-43ee-8980-f17513faf304/technician_repair_1789136210812.png" alt="Paslode service" class="social-img">
+          <a href="https://www.facebook.com/Elverktygsservice" target="_blank" rel="noopener noreferrer" style="color: var(--amber-primary); font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.3rem;">Visa på Facebook ↗</a>
+        </div>
+
+        <div class="social-card">
+          <div class="social-card-header">
+            <div class="social-avatar">EV</div>
+            <div class="social-meta">
+              <h4>Elverktygsservice i Jönköping AB</h4>
+              <span>För 5 dagar sedan • Facebook</span>
+            </div>
+          </div>
+          <p class="social-text">
+            Påfyllning i reservdelslagret på Industrigatan 10! Vi har nu fått in extra sändningar av kolborstsats och växelhuskomponenter för Makita 18V & 40V XGT kombihammare. Behöver du reservdelar över disk? Välkommen in 07:00-17:00!
+          </p>
+          <img src="file:///C:/Users/Jonny/.gemini/antigravity-ide/brain/80a278f1-4bd0-43ee-8980-f17513faf304/hero_workshop_1789136195178.png" alt="Reservdelslager" class="social-img">
+          <a href="https://www.facebook.com/Elverktygsservice" target="_blank" rel="noopener noreferrer" style="color: var(--amber-primary); font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.3rem;">Visa på Facebook ↗</a>
+        </div>
+
+        <div class="social-card">
+          <div class="social-card-header">
+            <div class="social-avatar">EV</div>
+            <div class="social-meta">
+              <h4>Elverktygsservice i Jönköping AB</h4>
+              <span>För 1 vecka sedan • Facebook</span>
+            </div>
+          </div>
+          <p class="social-text">
+            Kom ihåg den årliga elsäkerhetsbesiktningen av era 230V byggmaskiner! Vi besiktigar och märker alla maskiner enligt EN 62841 så att era byggarbetsplatser uppfyller alla krav från Arbetsmiljöverket.
+          </p>
+          <img src="file:///C:/Users/Jonny/.gemini/antigravity-ide/brain/80a278f1-4bd0-43ee-8980-f17513faf304/storefront_workshop_1789136230853.png" alt="Storefront" class="social-img">
+          <a href="https://www.facebook.com/Elverktygsservice" target="_blank" rel="noopener noreferrer" style="color: var(--amber-primary); font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.3rem;">Visa på Facebook ↗</a>
+        </div>
+      </div>
+
+      <!-- Instagram Grid (Hidden by default) -->
+      <div id="ig-feed" class="social-grid" style="display: none;">
+        <div class="social-card">
+          <div class="social-card-header">
+            <div class="social-avatar" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); color: #fff;">IG</div>
+            <div class="social-meta">
+              <h4>@elverktygsserviceijonkopingab</h4>
+              <span>Instagram Story</span>
+            </div>
+          </div>
+          <img src="file:///C:/Users/Jonny/.gemini/antigravity-ide/brain/80a278f1-4bd0-43ee-8980-f17513faf304/technician_repair_1789136210812.png" alt="Instagram post 1" class="social-img">
+          <p class="social-text">När precision räknas. Totalöversyn av Milwaukee M18 Fuel mutterdragare i bänken ⚡ #elverktygsservice #jönköping</p>
+          <a href="https://www.instagram.com/elverktygsserviceijonkopingab?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" style="color: var(--amber-primary); font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.3rem;">Följ på Instagram ↗</a>
+        </div>
+
+        <div class="social-card">
+          <div class="social-card-header">
+            <div class="social-avatar" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); color: #fff;">IG</div>
+            <div class="social-meta">
+              <h4>@elverktygsserviceijonkopingab</h4>
+              <span>Instagram Post</span>
+            </div>
+          </div>
+          <img src="file:///C:/Users/Jonny/.gemini/antigravity-ide/brain/80a278f1-4bd0-43ee-8980-f17513faf304/hero_workshop_1789136195178.png" alt="Instagram post 2" class="social-img">
+          <p class="social-text">Auktoriserad verkstad på Industrigatan 10 i Jönköping. Välkommen in! 🏬</p>
+          <a href="https://www.instagram.com/elverktygsserviceijonkopingab?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" style="color: var(--amber-primary); font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.3rem;">Följ på Instagram ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Opening Hours Section -->
+  <section id="kontakt" class="location-section">
+    <div class="container">
+      <div class="location-grid">
+        <div>
+          <div class="badge badge-amber" style="margin-bottom: 1rem;">Välkommen till verkstan</div>
+          <h2>Kontakt & Öppettider</h2>
+          <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.05rem;">
+            Du hittar vår moderna verkstad och reservdelsbutik på Industrigatan 10 i Jönköping (goda parkeringsmöjligheter för lätta lastbilar och släp).
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2.5rem;">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(245, 158, 11, 0.15); color: var(--amber-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong style="color: var(--text-main); font-size: 1.05rem; display: block;">Besöksadress:</strong>
+                <span style="color: var(--text-muted);">Elverktygsservice i Jönköping AB<br>Industrigatan 10, 553 02 Jönköping</span>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(2, 132, 199, 0.15); color: #38bdf8; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <strong style="color: var(--text-main); font-size: 1.05rem; display: block;">Telefon & E-post:</strong>
+                <a href="tel:036187080" style="color: var(--amber-primary); font-weight: 700; font-size: 1.1rem;">036-18 70 80</a><br>
+                <a href="mailto:info@elverktygsservice.se" style="color: var(--text-muted);">info@elverktygsservice.se</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hours Table -->
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Ordinarie Öppettider Verkstad & Butik</h3>
+          <table class="hours-table">
+            <tbody>
+              <tr>
+                <td>Måndag</td>
+                <td style="text-align: right;">07:00 – 17:00</td>
+              </tr>
+              <tr>
+                <td>Tisdag</td>
+                <td style="text-align: right;">07:00 – 17:00</td>
+              </tr>
+              <tr>
+                <td>Onsdag</td>
+                <td style="text-align: right;">07:00 – 17:00</td>
+              </tr>
+              <tr>
+                <td>Torsdag</td>
+                <td style="text-align: right;">07:00 – 17:00</td>
+              </tr>
+              <tr>
+                <td>Fredag</td>
+                <td style="text-align: right;">07:00 – 17:00</td>
+              </tr>
+              <tr>
+                <td>Lördag</td>
+                <td style="text-align: right; color: var(--text-subtle);">Stängt</td>
+              </tr>
+              <tr>
+                <td>Söndag / Helgdag</td>
+                <td style="text-align: right; color: var(--text-subtle);">Stängt</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Map Embed for Industrigatan 10 Jönköping -->
+        <div class="map-container">
+          <iframe 
+            class="map-iframe" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2134.428410291946!2d14.1539113!3d57.7718001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465a6de9e0e5a555%3A0x8e8a8b8b8b8b8b8b!2sIndustrigatan%2010%2C%20553%2002%20J%C3%B6nk%C3%B6ping!5e0!3m2!1ssv!2sse!4v1700000000000!5m2!1ssv!2sse" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Karta till Elverktygsservice Jönköping (Industrigatan 10)">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-title">ELVERKTYGS<span>SERVICE</span></div>
+          <p>
+            Din auktoriserade verkstadspartner i Jönköping för reparering, service och förebyggande underhåll av professionella elverktyg och maskiner.
+          </p>
+          <div class="seo-tags">
+            <span class="seo-tag">Jönköping</span>
+            <span class="seo-tag">Huskvarna</span>
+            <span class="seo-tag">Nässjö</span>
+            <span class="seo-tag">Värnamo</span>
+            <span class="seo-tag">Habo</span>
+            <span class="seo-tag">Bankeryd</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Snabbnavigering</h4>
+          <ul class="footer-links">
+            <li><a href="#tjanster">Våra Tjänster</a></li>
+            <li><a href="#varumarken">Auktoriserade Varumärken</a></li>
+            <li><a href="#status">Sök Orderstatus (Spårning)</a></li>
+            <li><a href="#inlamning">Föranmäl Service</a></li>
+            <li><a href="#kontakt">Kontakt & Öppettider</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Huvudvarumärken</h4>
+          <ul class="footer-links">
+            <li><a href="#varumarken">Makita Service Jönköping</a></li>
+            <li><a href="#varumarken">Paslode / Spit Spikpistoler</a></li>
+            <li><a href="#varumarken">DeWalt Garanti & Reparation</a></li>
+            <li><a href="#varumarken">Milwaukee Heavy Duty</a></li>
+            <li><a href="#varumarken">Bosch Professional Service</a></li>
+            <li><a href="#varumarken">Festool Snickerimaskiner</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Direktkontakt</h4>
+          <p style="margin-bottom: 0.75rem;"><strong>Kundtjänst & Verkstad:</strong></p>
+          <p style="font-family: var(--font-mono); color: var(--amber-primary); font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">
+            <a href="tel:036187080" style="color: var(--amber-primary);">036-18 70 80</a>
+          </p>
+          <p>E-post: <a href="mailto:info@elverktygsservice.se" style="color: var(--text-main);">info@elverktygsservice.se</a></p>
+          <p style="margin-top: 1rem;">Industrigatan 10, 553 02 Jönköping</p>
+          
+          <div style="display: flex; gap: 0.75rem; margin-top: 1rem;">
+            <a href="https://www.facebook.com/Elverktygsservice" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="width: 36px; height: 36px; border-radius: 50%; background: var(--bg-card); border: 1px solid var(--border-glass); display: flex; align-items: center; justify-content: center; color: var(--text-main);">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10V9.5C10 7.01 11.49 5.65 13.75 5.65c1.08 0 2.25.19 2.25.19v2.47h-1.27c-1.23 0-1.62.77-1.62 1.56V12h2.78l-.44 3h-2.34v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/elverktygsserviceijonkopingab?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="width: 36px; height: 36px; border-radius: 50%; background: var(--bg-card); border: 1px solid var(--border-glass); display: flex; align-items: center; justify-content: center; color: var(--text-main);">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Elverktygsservice i Jönköping AB. Alla rättigheter förbehållna. Org.nr: 556123-4567.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" onclick="alert('Integritetspolicy: Vi samlar endast in personuppgifter i samband med din serviceförfrågan för att kunna utföra uppdraget enligt GDPR.'); return false;">Integritetspolicy</a>
+          <a href="#" onclick="alert('Allmänna villkor: 6 månaders garanti på utförd reparation och utbytta originalreservdelar.'); return false;">Servicevillkor</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Confirmation Modal -->
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-backdrop" onclick="document.getElementById('confirmation-modal').classList.remove('active')"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="document.getElementById('confirmation-modal').classList.remove('active')">✕</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <div style="width: 64px; height: 64px; background: rgba(16, 185, 129, 0.15); border-radius: 50%; color: var(--success); display: inline-flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 1rem;">✓</div>
+        <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Serviceförfrågan Registrerad!</h3>
+        <p style="color: var(--text-muted);">Tack <span id="modal-customer-name" style="color: var(--text-main); font-weight: 700;"></span>! Din föranmälan har mottagits i vårt system.</p>
+      </div>
+
+      <div style="background: var(--bg-darker); border: 1.5px dashed var(--amber-primary); border-radius: var(--radius-md); padding: 1.5rem; text-align: center; margin-bottom: 1.5rem;">
+        <span style="font-size: 0.825rem; color: var(--text-subtle); text-transform: uppercase; letter-spacing: 0.05em; display: block;">Ditt Order- & Spårningsnummer</span>
+        <div id="modal-code" style="font-family: var(--font-mono); font-size: 2.2rem; font-weight: 800; color: var(--amber-primary); margin: 0.5rem 0;">EV-94825</div>
+        <span style="font-size: 0.85rem; color: var(--text-muted);">Verktyg: <strong id="modal-details" style="color: var(--text-main);"></strong></span>
+      </div>
+
+      <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+        En bekräftelse har skickats till din e-post. Du kan när som helst använda spårningsnumret ovan längst upp på vår hemsida för att följa din reparation i verkstaden på Industrigatan 10.
+      </p>
+
+      <button class="btn btn-primary" style="width: 100%;" onclick="document.getElementById('confirmation-modal').classList.remove('active')">Stäng och Gå Tillbaka</button>
+    </div>
+  </div>
+
+  <!-- Brand Detail Modal -->
+  <div id="brand-modal" class="modal">
+    <div class="modal-backdrop" onclick="document.getElementById('brand-modal').classList.remove('active')"></div>
+    <div class="modal-content">
+      <button id="brand-modal-close" class="modal-close">✕</button>
+      <div class="badge badge-amber" id="brand-modal-badge" style="margin-bottom: 1rem;">Auktorisation</div>
+      <h3 id="brand-modal-title" style="font-size: 1.6rem; margin-bottom: 1rem;">Makita Service</h3>
+      <p id="brand-modal-desc" style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;"></p>
+      
+      <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Verkstadens Garanti & Tjänster:</h4>
+      <ul id="brand-modal-features" style="list-style: none; padding: 0; margin-bottom: 2rem;"></ul>
+
+      <a href="#inlamning" class="btn btn-primary" style="width: 100%;" onclick="document.getElementById('brand-modal').classList.remove('active')">Föranmäl maskin för service</a>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Engine -->
+  <script src="js/main.js"></script>
+</body>
+</html>
