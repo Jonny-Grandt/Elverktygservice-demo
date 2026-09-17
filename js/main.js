@@ -4,6 +4,7 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
   initStickyHeader();
   initOpeningHoursStatus();
   initMobileMenu();
@@ -15,8 +16,54 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   1. Sticky Header & Scroll Effects
+   0. Theme Toggle (Dark ↔ Light)
    ========================================================================== */
+function initThemeToggle() {
+  const html = document.documentElement;
+  const toggleBtn = document.getElementById('theme-toggle');
+  const mobileToggleBtn = document.getElementById('mobile-theme-toggle');
+  const mobileLabel = document.getElementById('mobile-theme-label');
+
+  // Restore saved theme from localStorage
+  const savedTheme = localStorage.getItem('ev-theme');
+  if (savedTheme === 'light') {
+    html.setAttribute('data-theme', 'light');
+  }
+
+  function updateMobileLabel() {
+    if (mobileLabel) {
+      const isLight = html.getAttribute('data-theme') === 'light';
+      mobileLabel.textContent = isLight ? 'Mörkt Tema' : 'Ljust Tema';
+    }
+  }
+
+  function toggleTheme() {
+    const currentTheme = html.getAttribute('data-theme');
+    if (currentTheme === 'light') {
+      html.removeAttribute('data-theme');
+      localStorage.setItem('ev-theme', 'dark');
+    } else {
+      html.setAttribute('data-theme', 'light');
+      localStorage.setItem('ev-theme', 'light');
+    }
+    updateMobileLabel();
+  }
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', toggleTheme);
+  }
+
+  if (mobileToggleBtn) {
+    mobileToggleBtn.addEventListener('click', toggleTheme);
+  }
+
+  // Initialize mobile label text
+  updateMobileLabel();
+}
+
+/* ==========================================================================
+   1. Sticky Header & Scroll Effects
+   ==========================================================================  */
 function initStickyHeader() {
   const header = document.querySelector('.header');
   if (!header) return;
@@ -43,26 +90,38 @@ function initOpeningHoursStatus() {
   const minutes = now.getMinutes();
   const currentTime = hours * 60 + minutes;
 
-  // Opening Hours (Monday - Friday 07:00 - 17:00, Sat-Sun Closed)
-  const openTime = 7 * 60;   // 07:00
-  const closeTime = 17 * 60; // 17:00
+  // Opening Hours: Mon-Thu 07:30-16:30, Fri 07:30-13:00, Sat-Sun Closed
+  const openTime = 7 * 60 + 30; // 07:30
 
   let isOpen = false;
   let statusText = '';
 
-  if (day >= 1 && day <= 5) {
+  if (day >= 1 && day <= 4) {
+    // Monday - Thursday (07:30 - 16:30)
+    const closeTime = 16 * 60 + 30; // 16:30
     if (currentTime >= openTime && currentTime < closeTime) {
       isOpen = true;
-      statusText = 'Öppet nu! Stänger kl 17:00';
+      statusText = 'Öppet nu! Stänger kl 16:30';
     } else if (currentTime < openTime) {
-      statusText = 'Stängt nu. Öppnar kl 07:00';
+      statusText = 'Stängt nu. Öppnar kl 07:30';
     } else {
-      statusText = 'Stängt för idag. Öppnar imorgon 07:00';
+      statusText = 'Stängt för idag. Öppnar imorgon 07:30';
+    }
+  } else if (day === 5) {
+    // Friday (07:30 - 13:00)
+    const closeTime = 13 * 60; // 13:00
+    if (currentTime >= openTime && currentTime < closeTime) {
+      isOpen = true;
+      statusText = 'Öppet nu! Stänger kl 13:00';
+    } else if (currentTime < openTime) {
+      statusText = 'Stängt nu. Öppnar kl 07:30';
+    } else {
+      statusText = 'Stängt för helgen. Öppnar Måndag 07:30';
     }
   } else if (day === 6) {
-    statusText = 'Stängt idag (Lördag). Öppnar Måndag 07:00';
+    statusText = 'Stängt idag (Lördag). Öppnar Måndag 07:30';
   } else {
-    statusText = 'Stängt idag (Söndag). Öppnar Måndag 07:00';
+    statusText = 'Stängt idag (Söndag). Öppnar Måndag 07:30';
   }
 
   statusElement.innerHTML = `
