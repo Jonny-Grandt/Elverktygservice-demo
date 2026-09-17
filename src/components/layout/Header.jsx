@@ -18,27 +18,27 @@ export function Header({ theme, toggleTheme, onOpenMobileMenu }) {
       className={`sticky top-0 z-50 glass-panel border-b transition-all duration-300 ${
         scrolled
           ? 'shadow-2xl bg-[var(--bg-darker)]/95 border-[var(--border-glass)] py-2'
-          : 'bg-[var(--bg-glass)] border-[var(--border-glass)] py-3'
+          : 'bg-[var(--bg-glass)] border-[var(--border-glass)] py-2.5 sm:py-3'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 flex items-center justify-between gap-2 sm:gap-4">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3 group shrink-0">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-slate-950 shadow-md shadow-amber-500/20 group-hover:scale-105 transition">
-            <Wrench className="w-5 h-5 stroke-[2.5]" />
+        <a href="#" className="flex items-center gap-2 sm:gap-3 group min-w-0 shrink">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-slate-950 shadow-md shadow-amber-500/20 group-hover:scale-105 transition shrink-0">
+            <Wrench className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5]" />
           </div>
-          <div className="flex flex-col">
-            <div className="font-heading font-black text-lg tracking-tight text-[var(--text-main)] leading-none">
+          <div className="flex flex-col min-w-0">
+            <div className="font-heading font-black text-sm sm:text-base md:text-lg tracking-tight text-[var(--text-main)] leading-none truncate">
               ELVERKTYGS<span className="text-amber-500">SERVICE</span>
             </div>
-            <div className="text-[10px] font-bold tracking-widest text-[var(--text-subtle)] uppercase mt-0.5">
+            <div className="hidden sm:block text-[9px] sm:text-[10px] font-bold tracking-widest text-[var(--text-subtle)] uppercase mt-0.5 truncate">
               Jönköping • Auktoriserad Verkstad
             </div>
           </div>
         </a>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+        <nav className="hidden lg:flex items-center gap-5 xl:gap-8">
           {[
             { label: 'Våra Tjänster', href: '#tjanster' },
             { label: 'Varumärken', href: '#varumarken' },
@@ -57,19 +57,20 @@ export function Header({ theme, toggleTheme, onOpenMobileMenu }) {
         </nav>
 
         {/* Actions */}
-        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
           <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
 
+          {/* Desktop Only CTAs */}
           <a
             href="#status"
-            className="hidden md:inline-flex items-center justify-center text-xs font-bold py-1.5 px-3 rounded-lg bg-[var(--bg-card)] border border-[var(--border-glass)] text-[var(--text-main)] hover:bg-[var(--bg-card-hover)] hover:-translate-y-0.5 transition shadow-sm whitespace-nowrap"
+            className="hidden lg:inline-flex items-center justify-center text-xs font-bold py-1.5 px-3 rounded-lg bg-[var(--bg-card)] border border-[var(--border-glass)] text-[var(--text-main)] hover:bg-[var(--bg-card-hover)] hover:-translate-y-0.5 transition shadow-sm whitespace-nowrap"
           >
             Sök Status
           </a>
 
           <a
             href="#inlamning"
-            className="hidden sm:inline-flex items-center justify-center text-xs font-bold py-1.5 px-3.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 shadow-md shadow-amber-500/20 hover:from-amber-400 hover:to-amber-500 hover:-translate-y-0.5 transition whitespace-nowrap"
+            className="hidden lg:inline-flex items-center justify-center text-xs font-bold py-1.5 px-3.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 shadow-md shadow-amber-500/20 hover:from-amber-400 hover:to-amber-500 hover:-translate-y-0.5 transition whitespace-nowrap"
           >
             Boka Reparation
           </a>
@@ -77,7 +78,7 @@ export function Header({ theme, toggleTheme, onOpenMobileMenu }) {
           {/* Mobile Menu Toggle Button */}
           <button
             onClick={onOpenMobileMenu}
-            className="lg:hidden p-2 rounded-lg bg-white/5 border border-[var(--border-glass)] text-[var(--text-main)] hover:bg-white/10 transition"
+            className="lg:hidden p-2 rounded-lg bg-[var(--bg-card)] border border-[var(--border-glass)] text-[var(--text-main)] hover:bg-[var(--bg-card-hover)] hover:border-amber-500/50 transition shrink-0"
             aria-label="Öppna meny"
           >
             <Menu className="w-5 h-5" />
