@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, ArrowRight, Search, ShieldCheck } from 'lucide-react';
+import heroWorkshopImg from '../../../assets/hero_workshop.png';
 
 export function HeroSection() {
   return (
@@ -68,7 +69,7 @@ export function HeroSection() {
         <div className="lg:col-span-5 relative">
           <div className="relative rounded-2xl overflow-hidden border border-[var(--border-glass)] shadow-2xl bg-[var(--bg-card)] group">
             <img
-              src="/assets/hero_workshop.png"
+              src={heroWorkshopImg}
               alt="Elverktygsservice Jönköping Verkstad"
               className="w-full h-auto object-cover transform group-hover:scale-102 transition duration-700"
             />
