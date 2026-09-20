@@ -18,8 +18,11 @@ export function BrandGrid() {
           <h2 className="font-heading font-black text-2xl sm:text-3xl md:text-4xl text-[var(--text-main)] tracking-tight">
             Varumärken vi servar & reparerar
           </h2>
+          <h3 className="font-heading font-bold text-base sm:text-lg text-amber-500 mt-2">
+            Auktoriserad service på Makita, Paslode, DeWalt, Milwaukee och Bosch i Jönköping
+          </h3>
           <p className="text-sm sm:text-base text-[var(--text-muted)] mt-3">
-            Vi arbetar uteslutande med originalreservdelar direkt från tillverkarna för att garantera fullständig prestanda och bibehållen maskingaranti.
+            Som din lokala servicepartner i Jönköping erbjuder vi auktoriserad service på Makita, Paslode, DeWalt, Milwaukee och Bosch. Vi arbetar uteslutande med originalreservdelar direkt från tillverkarna för att garantera fullständig prestanda, personsäkerhet och bibehållen maskingaranti.
           </p>
         </div>
 
