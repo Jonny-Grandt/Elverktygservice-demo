@@ -48,18 +48,6 @@ const services = [
     btnHref: '#inlamning'
   },
   {
-    icon: BatteryCharging,
-    title: 'Batteridiagnostik & Test',
-    desc: 'Har ditt 18V eller 40V batteri tappat orken? Vi testar och konditionerar litiumjonbatterier för att säkerställa full drifttid på arbetsplatsen.',
-    features: [
-      'Mätning av intern cellbalans',
-      'Laddarprovning & mjukvaruuppdatering',
-      'Återvinning & utbytesbatterier'
-    ],
-    btnText: 'Testa Batteri',
-    btnHref: '#inlamning'
-  },
-  {
     icon: Layers,
     title: 'Originalreservdelar & Tillbehör',
     desc: 'Stort lager av kolborstar, växelhus, rotorer, strömbrytare och sågklingor i vår butik på Industrigatan 10 i Jönköping. Hämtning över disk.',

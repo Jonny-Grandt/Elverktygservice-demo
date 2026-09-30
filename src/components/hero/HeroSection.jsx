@@ -1,6 +1,6 @@
 import React from 'react';
 import { Award, ArrowRight, Search, ShieldCheck } from 'lucide-react';
-import heroWorkshopImg from '../../../assets/hero_workshop.png';
+import logoImg from '../../../assets/Logo.png';
 
 export function HeroSection() {
   return (
@@ -65,31 +65,14 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Right Column: Visual image & floating badge */}
+        {/* Right Column: Visual image */}
         <div className="lg:col-span-5 relative">
-          <div className="relative rounded-2xl overflow-hidden border border-[var(--border-glass)] shadow-2xl bg-[var(--bg-card)] group">
+          <div className="relative rounded-2xl overflow-hidden border border-[var(--border-glass)] shadow-2xl bg-[var(--bg-card)] group p-2">
             <img
-              src={heroWorkshopImg}
-              alt="Elverktygsservice Jönköping Verkstad"
-              className="w-full h-auto object-cover transform group-hover:scale-102 transition duration-700"
+              src={logoImg}
+              alt="Elverktygsservice AB Jönköping"
+              className="w-full h-auto object-contain rounded-xl transform group-hover:scale-102 transition duration-700"
             />
-            {/* Subtle Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-
-            {/* Floating Glass Badge */}
-            <div className="absolute bottom-4 left-4 right-4 sm:left-6 sm:right-6 glass-panel rounded-xl p-3.5 flex items-center gap-3 shadow-xl">
-              <div className="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-500 flex items-center justify-center shrink-0">
-                <ShieldCheck className="w-5 h-5" />
-              </div>
-              <div>
-                <h4 className="font-heading font-bold text-xs sm:text-sm text-[var(--text-main)] leading-snug">
-                  Direkt Garanti-Registrering
-                </h4>
-                <p className="text-[11px] text-[var(--text-muted)]">
-                  Makita, Paslode, DeWalt, Milwaukee & Bosch
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

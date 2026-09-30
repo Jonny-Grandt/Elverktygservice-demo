@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { CalendarCheck, Building2, User, Upload, ArrowRight, ShieldCheck, FileCheck } from 'lucide-react';
-import { ConfirmationModal } from './ConfirmationModal';
+import { CalendarCheck, Building2, User, Upload, ArrowRight, ShieldCheck, FileCheck, FileText, Download } from 'lucide-react';
+import repairFormPdf from '../../../assets/Reparationsblandett.pdf';
 
 export function BookingForm({ onToast }) {
   const [customerType, setCustomerType] = useState('Företag');
@@ -14,7 +14,6 @@ export function BookingForm({ onToast }) {
     description: '',
   });
   const [fileName, setFileName] = useState('');
-  const [confirmationData, setConfirmationData] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,11 +29,6 @@ export function BookingForm({ onToast }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const orderNum = `EV-${Math.floor(10000 + Math.random() * 90000)}`;
-    setConfirmationData({
-      ...formData,
-      customerType,
-      orderCode: orderNum
-    });
 
     if (onToast) {
       onToast(`Serviceförfrågan registrerad med nummer ${orderNum}!`);
@@ -69,11 +63,10 @@ export function BookingForm({ onToast }) {
                 <button
                   type="button"
                   onClick={() => setCustomerType('Företag')}
-                  className={`flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl border text-sm font-semibold transition ${
-                    customerType === 'Företag'
-                      ? 'bg-amber-500/15 border-amber-500 text-amber-500 ring-1 ring-amber-500'
-                      : 'bg-[var(--bg-darker)] border-[var(--border-glass)] text-[var(--text-muted)] hover:border-amber-500/50'
-                  }`}
+                  className={`flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl border text-sm font-semibold transition ${customerType === 'Företag'
+                    ? 'bg-amber-500/15 border-amber-500 text-amber-500 ring-1 ring-amber-500'
+                    : 'bg-[var(--bg-darker)] border-[var(--border-glass)] text-[var(--text-muted)] hover:border-amber-500/50'
+                    }`}
                 >
                   <Building2 className="w-4 h-4" />
                   <span>Företag / Byggfirma</span>
@@ -82,11 +75,10 @@ export function BookingForm({ onToast }) {
                 <button
                   type="button"
                   onClick={() => setCustomerType('Privatperson')}
-                  className={`flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl border text-sm font-semibold transition ${
-                    customerType === 'Privatperson'
-                      ? 'bg-amber-500/15 border-amber-500 text-amber-500 ring-1 ring-amber-500'
-                      : 'bg-[var(--bg-darker)] border-[var(--border-glass)] text-[var(--text-muted)] hover:border-amber-500/50'
-                  }`}
+                  className={`flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl border text-sm font-semibold transition ${customerType === 'Privatperson'
+                    ? 'bg-amber-500/15 border-amber-500 text-amber-500 ring-1 ring-amber-500'
+                    : 'bg-[var(--bg-darker)] border-[var(--border-glass)] text-[var(--text-muted)] hover:border-amber-500/50'
+                    }`}
                 >
                   <User className="w-4 h-4" />
                   <span>Privatperson</span>
@@ -270,14 +262,37 @@ export function BookingForm({ onToast }) {
             </div>
           </form>
         </div>
-      </div>
 
-      {/* Confirmation Modal */}
-      <ConfirmationModal
-        isOpen={Boolean(confirmationData)}
-        onClose={() => setConfirmationData(null)}
-        data={confirmationData}
-      />
+        {/* Download Repair Form Card */}
+        <div className="mt-8 card-panel rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border border-amber-500/20 bg-gradient-to-r from-[var(--bg-card)] via-[var(--bg-card)] to-amber-500/[0.04]">
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-500 flex items-center justify-center shrink-0">
+              <FileText className="w-6 h-6" />
+            </div>
+            <div>
+              <h3 className="font-heading font-bold text-base sm:text-lg text-[var(--text-main)]">
+                Föredrar du att fylla i för hand vid inlämning?
+              </h3>
+              <p className="text-xs sm:text-sm text-[var(--text-muted)] mt-1 max-w-xl">
+                Ladda ner och skriv ut vår reparationsblankett. Bifoga den med maskinen när du lämnar in den till oss på Industrigatan 10 i Jönköping eller skickar med turbil.
+              </p>
+              <p className="text-xs text-amber-500 font-medium mt-1">
+                OBS! Om man bokar garantiservice måste man bifoga bild på kvittot.
+              </p>
+            </div>
+          </div>
+          <a
+            href={repairFormPdf}
+            download="Reparationsblankett-Elverktygsservice.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[var(--bg-darker)] border border-amber-500/40 text-[var(--text-main)] hover:border-amber-500 hover:text-amber-500 font-heading font-bold text-sm shadow-md transition group"
+          >
+            <Download className="w-4 h-4 text-amber-500 group-hover:translate-y-0.5 transition-transform" />
+            <span>Hämta Reparationsblankett</span>
+          </a>
+        </div>
+      </div>
     </section>
   );
 }
