@@ -55,7 +55,6 @@ export function Footer() {
             <ul className="flex flex-col gap-2.5 text-xs">
               <li><a href="#varumarken" className="hover:text-amber-500 transition">Makita Service Jönköping</a></li>
               <li><a href="#varumarken" className="hover:text-amber-500 transition">Paslode / Spit Spikpistoler</a></li>
-              <li><a href="#varumarken" className="hover:text-amber-500 transition">DeWalt Garanti & Reparation</a></li>
               <li><a href="#varumarken" className="hover:text-amber-500 transition">Milwaukee Heavy Duty</a></li>
               <li><a href="#varumarken" className="hover:text-amber-500 transition">Bosch Professional Service</a></li>
               <li><a href="#varumarken" className="hover:text-amber-500 transition">Festool Snickerimaskiner</a></li>
