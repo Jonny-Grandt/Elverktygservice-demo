@@ -41,7 +41,6 @@ export function Footer() {
             <ul className="flex flex-col gap-2.5 text-xs">
               <li><a href="#tjanster" className="hover:text-amber-500 transition">Våra Tjänster</a></li>
               <li><a href="#varumarken" className="hover:text-amber-500 transition">Auktoriserade Varumärken</a></li>
-              <li><a href="#status" className="hover:text-amber-500 transition">Sök Orderstatus (Spårning)</a></li>
               <li><a href="#inlamning" className="hover:text-amber-500 transition">Föranmäl Service</a></li>
               <li><a href="#kontakt" className="hover:text-amber-500 transition">Kontakt & Öppettider</a></li>
             </ul>

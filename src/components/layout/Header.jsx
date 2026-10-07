@@ -42,7 +42,6 @@ export function Header({ theme, toggleTheme, onOpenMobileMenu }) {
           {[
             { label: 'Våra Tjänster', href: '#tjanster' },
             { label: 'Varumärken', href: '#varumarken' },
-            { label: 'Sök Orderstatus', href: '#status' },
             { label: 'Boka Service', href: '#inlamning' },
             { label: 'Kontakt & Hitta Hit', href: '#kontakt' },
           ].map((item) => (
@@ -59,14 +58,6 @@ export function Header({ theme, toggleTheme, onOpenMobileMenu }) {
         {/* Actions */}
         <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
           <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-
-          {/* Desktop Only CTAs */}
-          <a
-            href="#status"
-            className="hidden lg:inline-flex items-center justify-center text-xs font-bold py-1.5 px-3 rounded-lg bg-[var(--bg-card)] border border-[var(--border-glass)] text-[var(--text-main)] hover:bg-[var(--bg-card-hover)] hover:-translate-y-0.5 transition shadow-sm whitespace-nowrap"
-          >
-            Sök Status
-          </a>
 
           <a
             href="#inlamning"

@@ -5,7 +5,6 @@ import { Header } from './components/layout/Header';
 import { MobileMenu } from './components/layout/MobileMenu';
 import { HeroSection } from './components/hero/HeroSection';
 import { BrandGrid } from './components/brands/BrandGrid';
-import { RepairTracker } from './components/tracker/RepairTracker';
 import { ServicesSection } from './components/services/ServicesSection';
 import { BookingForm } from './components/booking/BookingForm';
 import { SocialSection } from './components/social/SocialSection';
@@ -50,7 +49,6 @@ export function App() {
       <main className="flex-1">
         <HeroSection />
         <BrandGrid />
-        <RepairTracker onToast={addToast} />
         <ServicesSection />
         <BookingForm onToast={addToast} />
         <SocialSection />

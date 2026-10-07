@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, ArrowRight, Search, ShieldCheck } from 'lucide-react';
+import { Award, ArrowRight, ShieldCheck } from 'lucide-react';
 import logoImg from '../../../assets/Logo.png';
 
 export function HeroSection() {
@@ -34,11 +34,10 @@ export function HeroSection() {
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="#status"
+              href="#tjanster"
               className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] text-[var(--text-main)] font-heading font-bold text-base hover:bg-[var(--bg-card-hover)] hover:-translate-y-0.5 transition shadow-sm"
             >
-              <Search className="w-4 h-4 text-amber-500" />
-              <span>Sök Reparationsstatus</span>
+              <span>Se Våra Tjänster</span>
             </a>
           </div>
 

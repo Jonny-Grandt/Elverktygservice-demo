@@ -45,7 +45,6 @@ export function MobileMenu({ isOpen, onClose, theme, toggleTheme }) {
             {[
               { label: 'Våra Tjänster', href: '#tjanster' },
               { label: 'Varumärken', href: '#varumarken' },
-              { label: 'Sök Orderstatus', href: '#status' },
               { label: 'Boka Service', href: '#inlamning' },
               { label: 'Kontakt & Öppettider', href: '#kontakt' },
             ].map((item) => (
